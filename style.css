@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(251, 248, 239);
+}
+
+header {
+    background-color: rgb(33, 28, 132);
+    padding-top: 10px;
+    
+}
+
+.myName {
+    padding-left: 100px;
+}
+
+nav {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.Home {
+    background-color: rgb(181, 168, 213);
+}
+
+.Socials {
+    background-color: rgb(122, 115, 209);
+}
