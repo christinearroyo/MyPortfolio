@@ -8,17 +8,28 @@
 </head>
 <body>
     <header>
-        <a href="#" class="myName">Christine Arroyo</a>
-
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Education</a>
-            <a href="#">Skills</a>
-            <a href="#">Experience</a>
-            <a href="#">Services</a>
-            <a href="#">Reviews</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <ul>
+                <li><a href="#">Christine Arroyo</a></li>
+                <li class="hideOnMobile"><a href="#">Education</a></li>
+                <li class="hideOnMobile"><a href="#">Skills</a></li>
+                <li class="hideOnMobile"><a href="#">Experience</a></li>
+                <li class="hideOnMobile"><a href="#">Services</a></li>
+                <li class="hideOnMobile"><a href="#">Blog</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="hideOnMobile"><a href="#">Reviews</a></li>
+                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -51,5 +62,17 @@
     </div>
     </section>
 
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
