@@ -71,3 +71,23 @@ nav li:first-child {
         display: none;
     }
 }
+
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Introduction {
+    max-width: 400px;
+}
+
+.Information {
+    max-width: 400px;
+}
+
+
+
